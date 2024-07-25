@@ -1,5 +1,6 @@
 
 ![image](image/qrcode.jpg)
+
 Integrate the Timber library to dynamically output specified logs, encapsulating it into a module for use by other modules!
 
 1. Configure a specific file name to allow log output.
