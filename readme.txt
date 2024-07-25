@@ -1,4 +1,4 @@
- ![image](https://github.com/278359100/logs/blob/main/qrcode_for_gh_ee8d175bb0fd_258.jpg)
+ ![image](logs/qrcode_for_gh_ee8d175bb0fd_258.jpg)
 
 Integrate the Timber library to dynamically output specified logs, encapsulating it into a module for use by other modules!
 
