@@ -1,4 +1,4 @@
- ![image](https://github.com/278359100/logs/main/image/qrcode.jpg)
+https://raw.githubusercontent.com/278359100/logs/main/image/qrcode.jpg
 
 Integrate the Timber library to dynamically output specified logs, encapsulating it into a module for use by other modules!
 
