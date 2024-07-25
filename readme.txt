@@ -18,3 +18,7 @@ Example:
 
 示例：
  (SearchCardActivity.java:58):getTablesVersion9999999999 [Caller: loadTables]
+
+
+CallTimber.start();// switch open logs
+CustomTimber.d( "getTablesVersion" + getTablesVersion(17));// call log.
