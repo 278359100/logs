@@ -1,4 +1,4 @@
-https://raw.githubusercontent.com/278359100/logs/main/image/qrcode.jpg
+[![MasterHead](https://github.com/278359100/logs/blob/main/qrcode_for_gh_ee8d175bb0fd_258.jpg)](your GitHub link)
 
 Integrate the Timber library to dynamically output specified logs, encapsulating it into a module for use by other modules!
 
