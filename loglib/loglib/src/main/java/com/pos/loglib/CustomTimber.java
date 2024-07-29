@@ -1,8 +1,6 @@
-package com.ktp.loglib;
+package com.pos.loglib;
 
-import static com.ktp.loglib.StackTraceIndices.CUSTOM_TIMBER_INDEX;
-
-import android.util.Log;
+import static com.pos.loglib.StackTraceIndices.CUSTOM_TIMBER_INDEX;
 
 import timber.log.Timber;
 

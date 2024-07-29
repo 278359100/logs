@@ -1,8 +1,6 @@
-package com.ktp.loglib;
+package com.pos.loglib;
 
-import static com.ktp.loglib.StackTraceIndices.CUSTOM_TAG_TREE_INDEX;
-
-import android.util.Log;
+import static com.pos.loglib.StackTraceIndices.CUSTOM_TAG_TREE_INDEX;
 
 import java.util.Set;
 
@@ -10,11 +8,9 @@ import timber.log.Timber;
 
 public class CustomTagTree extends Timber.DebugTree {
     private Set<String> allowedTags;
-
     public CustomTagTree(Set<String> allowedTags) {
         this.allowedTags = allowedTags;
     }
-
     @Override
     protected void log(int priority, String tag, String message, Throwable t) {
         // Automatically set the tag based on the stack trace element

@@ -1,4 +1,4 @@
-package com.ktp.loglib;
+package com.pos.loglib;
 
 public class StackTraceIndices {
     public static final int CUSTOM_TIMBER_INDEX = 4;  // 获取调用者的堆栈信息，索引 3 处通常是调用 CustomTimber.d() 方法的代码行
