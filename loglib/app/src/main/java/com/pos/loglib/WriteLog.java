@@ -1,26 +1,25 @@
 package com.pos.loglib;
 
-import android.os.Bundle;
-import android.util.Log;
-
-import androidx.appcompat.app.AppCompatActivity;
+import android.content.Context;
 
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-public class MainActivity extends AppCompatActivity {
-    // 获取配置文件路径
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+public class WriteLog {
 
+    private Context context;
+
+    public WriteLog(Context context) {
+        this.context = context;
+        writeLog();
+    }
+    private void writeLog() {
         // 将配置文件从res/raw复制到内部存储目录（仅第一次运行时）
-        File configFile = new File(getFilesDir(), "config.properties");
+        File configFile = new File(context.getFilesDir(), "config.properties");
         if (!configFile.exists()) {
-            try (InputStream inputStream = getResources().openRawResource(R.raw.config);
+            try (InputStream inputStream = context.getResources().openRawResource(R.raw.config);
                  FileOutputStream outputStream = new FileOutputStream(configFile)) {
                 byte[] buffer = new byte[1024];
                 int length;
@@ -47,7 +46,4 @@ public class MainActivity extends AppCompatActivity {
         // 使用CustomTimber
         CustomTimber.d("loglib is working");
     }
-
-
-
 }
